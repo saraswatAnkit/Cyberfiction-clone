@@ -41,9 +41,15 @@ canvas.height = window.innerHeight;
 
 
 window.addEventListener("resize", function () {
+  if(this.window.innerWidth<700){
+    canvas.width = (window.innerWidth);
+    canvas.height = (window.innerHeight);
+  render();
+  }else{
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   render();
+  }
 });
 
 function files(index) {
