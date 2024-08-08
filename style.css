@@ -201,7 +201,7 @@ canvas{
     }
     canvas{
         z-index: 9;
-        opacity: .5;
+        opacity: .9;
         -webkit-backdrop-filter: drop-shadow(#ebf70911);
         backdrop-filter: drop-shadow(#ebf70911);
     }
