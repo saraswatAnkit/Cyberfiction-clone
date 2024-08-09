@@ -194,35 +194,56 @@ canvas{
     font-size: 3.4rem;
     text-align: end;
 }
+#loading{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0% ;
+    left: 0;
+    text-align: center;
+    opacity: .7;
+    background-color: #fff;
+    z-index: 99;
+}
+#loading img{
+    position: absolute;
+    top: 300px;
+    left: 240px;
+    z-index: 100;
+}
 
-@media (max-width: 650px){
+@media (max-width: 750px){
     html{
     font-size: 66%;
     }
     canvas{
-        z-index: 9;
+        /* z-index: 1; */
         opacity: .9;
         -webkit-backdrop-filter: drop-shadow(#ebf70911);
         backdrop-filter: drop-shadow(#ebf70911);
+        height: 70vh;
+        top: 30%;
+        left: 10%;
     }
     #loop{
         z-index: 6;
     }
     #page>h3{
-        z-index: 7;
+        z-index: 45;
         color: #000;
     }
     #page>h4{
-        z-index: 6;
+        z-index: 89;
     }
     #page>.mark{
-        z-index: 8;
+        z-index: 100;
     }
     #page1>#right-text{
-        z-index: 8;
+        z-index: 1000;
     }
     #page1>#right-text>h3{
-        z-index: 6;
+        z-index: 100;
     }
     #page1>#right-text>h1{
         z-index: 6;
